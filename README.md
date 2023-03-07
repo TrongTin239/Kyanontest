@@ -1,4 +1,4 @@
-# Test from Kyanon [Link-Demo]()
+# Test from Kyanon
 
 Login and Profile page
 
