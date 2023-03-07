@@ -17,11 +17,11 @@ export default function ProfileForm({ onSubmit }: ProfileFormProps) {
   const navigate = useNavigate();
   const schema = yup
     .object({
-      fullName: yup.string().required(),
+      fullName: yup.string(),
       dayOfBirth: yup.string(),
       email: yup
         .string()
-        // .required("Email is required")
+        .required("Email is required")
         .email("Invaid email address"),
       phone: yup
         .string()
@@ -55,9 +55,9 @@ export default function ProfileForm({ onSubmit }: ProfileFormProps) {
           control={control}
           name="fullName"
           label="Full name:"
-          //   register={{
-          //     ...register("fullName"),
-          //   }}
+          register={{
+            ...register("fullName"),
+          }}
         />
         <InputField
           type="date"
