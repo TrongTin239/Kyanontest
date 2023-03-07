@@ -10,6 +10,9 @@
   max-width: 400px;
   height: 600px;
   border-radius: 10px;
+  @media screen and (max-width: 375px) {
+    max-width: 300px;
+  }
   .login-form-title {
     font-weight: bold;
     text-align: center;
@@ -42,6 +45,7 @@
       align-items: center;
       .col {
         input {
+          margin-left: 5px;
           -ms-transform: scale(1.5); /* IE */
           -moz-transform: scale(1.5); /* FF */
           -webkit-transform: scale(1.5); /* Safari and Chrome */

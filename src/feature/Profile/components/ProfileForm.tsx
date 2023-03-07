@@ -17,15 +17,15 @@ export default function ProfileForm({ onSubmit }: ProfileFormProps) {
   const navigate = useNavigate();
   const schema = yup
     .object({
-      fullName: yup.string(),
+      fullName: yup.string().required(),
       dayOfBirth: yup.string(),
       email: yup
         .string()
-        .required("Email is required")
+        // .required("Email is required")
         .email("Invaid email address"),
       phone: yup
         .string()
-        .required("Phone number is required")
+        // .required("Phone number is required")
         .matches(
           /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/,
           "Invaid phone number"
@@ -55,9 +55,9 @@ export default function ProfileForm({ onSubmit }: ProfileFormProps) {
           control={control}
           name="fullName"
           label="Full name:"
-          register={{
-            ...register("fullName"),
-          }}
+          //   register={{
+          //     ...register("fullName"),
+          //   }}
         />
         <InputField
           type="date"
