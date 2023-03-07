@@ -1,0 +1,28 @@
+@import "../themes/variables";
+.profile-form {
+  .profile-form-title {
+    text-align: left;
+  }
+  .input-main {
+    .input-field {
+      p {
+        color: $text-color-2;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .form-action {
+    .row {
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      gap: 20px;
+      .col {
+        button.btn-cancel {
+          background-color: $text-color-2;
+          color: $text-color-main;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

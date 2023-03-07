@@ -1,0 +1,64 @@
+@import "../themes/variables";
+.login-form {
+  padding: 80px 20px;
+  margin: 0 auto;
+
+  background-color: $bg-color-form;
+  margin-top: 10%;
+  width: 600px;
+
+  max-width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  .login-form-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .input-main {
+    .input-field {
+      margin-bottom: 20px;
+      p {
+        color: $btn-color-main;
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        border-color: #dcdddf;
+      }
+      p.warning {
+        color: red;
+      }
+    }
+  }
+  .form-action {
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .col {
+        input {
+          -ms-transform: scale(1.5); /* IE */
+          -moz-transform: scale(1.5); /* FF */
+          -webkit-transform: scale(1.5); /* Safari and Chrome */
+          -o-transform: scale(1.5); /* Opera */
+          transform: scale(1.5);
+          padding: 10px;
+          accent-color: $btn-color-main;
+        }
+        button {
+          background-color: $btn-color-main;
+          color: white;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
